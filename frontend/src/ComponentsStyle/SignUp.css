@@ -1,0 +1,53 @@
+/* Ensure body and html take up full height to center properly */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  padding: 22px;
+}
+
+.form-container {
+  display: flex;                /* Use Flexbox to place forms side by side */
+  justify-content: center;       /* Center the forms horizontally */
+  align-items: center;           /* Center the forms vertically */
+  gap: 40px;                     /* Space between the forms */
+  height: 100vh;                 /* Take full viewport height */
+  padding: 36px;
+}
+
+.form {
+  width: 300px;                  /* Set form width */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form input, .form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background-color: #45a049;
+}
