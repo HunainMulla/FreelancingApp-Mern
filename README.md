@@ -3,17 +3,17 @@ Important ! : Make sure nodejs and react are installed in your pc
 ------------------------------------------------------------------------------
 Frontend Setup
 
-npm install @reduxjs/toolkit react-redux redux
-npm install react-router-dom react-router
-npm install @stripe/stripe-js @stripe/react-stripe-js
+npm install @reduxjs/toolkit react-redux redux,
+npm install react-router-dom react-router,
+npm install @stripe/stripe-js @stripe/react-stripe-js,
 
 ------------------------------------------------------------------------------
 
 Backend Setup
 
-npm install express
-npm install cors
-npm install mongodb
+npm install express,
+npm install cors,
+npm install mongodb,
 
 ------------------------------------------------------------------------------
 Mongodb Atlas Setup / Db
@@ -27,8 +27,8 @@ password-hunainyt19
 ------------------------------------------------------------------------------
 Now how to start
 
-Initialize backend server using node index.js or npm start
-Initialize frontend server using npm start
-Make sure both the servers are running on different ports
+Initialize backend server using node index.js or npm start,
+Initialize frontend server using npm start,
+Make sure both the servers are running on different ports,
 
 
