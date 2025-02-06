@@ -102,19 +102,19 @@ const RequestPage = () => {
                     />
                 </div>
 
-                <div style={styles.formGroup}>
-                    <label htmlFor="freelancerEmail" style={styles.label}>
-                        Freelancer's Email:
-                    </label>
-                    <input
-                        type="email"
-                        id="freelancerEmail"
-                        value={FreelancerName}
-                        style={styles.input}
-                        required
-                        disabled
-                    />
-                </div>
+                // <div style={styles.formGroup}>
+                //     <label htmlFor="freelancerEmail" style={styles.label}>
+                //         Freelancer's Email:
+                //     </label>
+                //     <input
+                //         type="email"
+                //         id="freelancerEmail"
+                //         value={FreelancerName}
+                //         style={styles.input}
+                //         required
+                //         disabled
+                //     />
+                // </div>
 
                 <div style={styles.formGroup}>
                     <label htmlFor="needDescription" style={styles.label}>
