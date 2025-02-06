@@ -8,6 +8,7 @@ const RequestPage = () => {
     const [needDescription, setNeedDescription] = useState('');
     const [clientSecret, setClientSecret] = useState('');
     const [paymentInProgress, setPaymentInProgress] = useState(false);
+    const [cardError, setCardError] = useState('');  
 
     const location = useLocation();
     const { FreelancerName, customerName } = location.state || {};
@@ -63,6 +64,7 @@ const RequestPage = () => {
         }
 
         setPaymentInProgress(true);
+        setCardError('');  
 
         const cardElement = elements.getElement(CardElement);
 
@@ -76,7 +78,7 @@ const RequestPage = () => {
         });
 
         if (error) {
-            alert('Payment failed: ' + error.message);
+            setCardError(error.message); 
         } else if (paymentIntent.status === 'succeeded') {
             alert('Payment Successful!');
         }
@@ -121,6 +123,8 @@ const RequestPage = () => {
                     </div>
                 )}
 
+                {cardError && <div style={styles.error}>{cardError}</div>} 
+
                 <div style={styles.buttonContainer}>
                     <button type="submit" style={styles.submitButton}>
                         Submit Request
@@ -134,7 +138,7 @@ const RequestPage = () => {
                         Pay Advance
                     </button>
                 </div>
-                <div class="alert alert-success" role="alert">
+                <div className="alert alert-success" role="alert">
                     Paying in advance helps ensure a quicker response and faster turnaround from the freelancer.
                 </div>
             </form>
@@ -210,6 +214,11 @@ const styles = {
     },
     cardElementContainer: {
         marginTop: '15px',
+    },
+    error: {
+        color: 'red',
+        marginTop: '10px',
+        fontSize: '14px',
     },
 };
 
