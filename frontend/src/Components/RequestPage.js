@@ -89,32 +89,18 @@ const RequestPage = () => {
             <h2>Request an Order</h2>
             <form onSubmit={handleSubmit} style={styles.form}>
                 <div style={styles.formGroup}>
-                    <label htmlFor="userEmail" style={styles.label}>
-                        Card Number:
+                    <label htmlFor="freelancerEmail" style={styles.label}>
+                        Freelancer's Email:
                     </label>
                     <input
                         type="email"
-                        id="userEmail"
-                        value={userEmail}
-                        onChange={(e) => setUserEmail(e.target.value)}
+                        id="freelancerEmail"
+                        value={FreelancerName}
                         style={styles.input}
                         required
+                        disabled
                     />
                 </div>
-
-                // <div style={styles.formGroup}>
-                //     <label htmlFor="freelancerEmail" style={styles.label}>
-                //         Freelancer's Email:
-                //     </label>
-                //     <input
-                //         type="email"
-                //         id="freelancerEmail"
-                //         value={FreelancerName}
-                //         style={styles.input}
-                //         required
-                //         disabled
-                //     />
-                // </div>
 
                 <div style={styles.formGroup}>
                     <label htmlFor="needDescription" style={styles.label}>
