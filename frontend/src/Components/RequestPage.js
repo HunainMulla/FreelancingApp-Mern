@@ -90,7 +90,7 @@ const RequestPage = () => {
             <form onSubmit={handleSubmit} style={styles.form}>
                 <div style={styles.formGroup}>
                     <label htmlFor="userEmail" style={styles.label}>
-                        Your Email:
+                        Card Number:
                     </label>
                     <input
                         type="email"
