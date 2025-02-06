@@ -3,9 +3,7 @@ Important ! : Make sure nodejs and react are installed in your pc
 ------------------------------------------------------------------------------
 Frontend Setup
 
-npm i @reduxjs/toolkit
-npm install react-redux
-npm install redux
+npm install @reduxjs/toolkit react-redux redux
 npm install react-router-dom react-router
 npm install @stripe/stripe-js @stripe/react-stripe-js
 
