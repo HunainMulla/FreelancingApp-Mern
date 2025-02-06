@@ -14,6 +14,7 @@ Backend Setup
 npm install express,
 npm install cors,
 npm install mongodb,
+npm install json,
 
 ------------------------------------------------------------------------------
 Mongodb Atlas Setup / Db
