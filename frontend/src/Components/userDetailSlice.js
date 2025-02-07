@@ -23,13 +23,19 @@ const userDetailSlice = createSlice({
       localStorage.setItem('userDetail', JSON.stringify(state.value)); // Persist to localStorage
     },
     clearUserDetail: (state) => {
-      state.value = { name: null, requests: 0, orders: 0 };
-      localStorage.removeItem('userDetail'); // Clear from localStorage
-      
+      // state.value = { name: null, requests: 0, orders: 0 };
+      // localStorage.removeItem('userDetail'); // Clear from localStorage
+      alert(state.name)
+    },
+    setUserDetailFromLocalStorage: (state) => {
+      const userDetailFromLocalStorage = JSON.parse(localStorage.getItem('userDetail'));
+      if (userDetailFromLocalStorage) {
+        state.value = userDetailFromLocalStorage;
+      }
     },
   },
 });
 
-export const { setname, orderAdd, requestAdd, clearUserDetail } = userDetailSlice.actions;
+export const { setname, orderAdd, requestAdd, clearUserDetail, setUserDetailFromLocalStorage } = userDetailSlice.actions;
 
 export default userDetailSlice.reducer;
