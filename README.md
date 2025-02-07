@@ -5,19 +5,13 @@ important : Make sure nodejs and react are installed in your pc
 ------------------------------------------------------------------------------
 Frontend Setup
 
-npm i @reduxjs/toolkit
-npm install react-redux
-npm install redux
-npm install react-router-dom react-router
-npm install @stripe/stripe-js @stripe/react-stripe-js
+npm i @reduxjs/toolkit react-redux redux react-router-dom react-router @stripe/stripe-js @stripe/react-stripe-js
 
 ------------------------------------------------------------------------------
 
 Backend Setup
 
-npm install express
-npm install cors
-npm install mongodb json 
+npm install express cors mongodb json 
 
 ------------------------------------------------------------------------------
 Mongodb Atlas Setup / Db
