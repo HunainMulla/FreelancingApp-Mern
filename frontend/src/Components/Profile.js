@@ -36,14 +36,14 @@ const Profile = () => {
                   View Orders
                 </button>
               </div>
-              <div style={styles.statItem}>
+              {/* <div style={styles.statItem}>
                 <span style={styles.statLabel}>Requests:</span>
                 <span style={styles.statValue}>{requests}</span>
               </div>
               <div style={styles.statItem}>
                 <span style={styles.statLabel}>Orders:</span>
                 <span style={styles.statValue}>{orders}</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
