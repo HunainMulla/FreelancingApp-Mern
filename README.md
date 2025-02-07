@@ -19,9 +19,7 @@ Mongodb Atlas Setup / Db
 Step 1: Visit MongoDB Atlas
 Open your browser and go to MongoDB Atlas.
 
-Step 2 : sign in using 
-email - hunainmulla161@gmail.com
-password-hunainyt19
+Step 2 : sign in 
 ------------------------------------------------------------------------------
 Now how to start
 
